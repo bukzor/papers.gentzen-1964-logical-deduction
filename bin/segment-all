@@ -1,0 +1,9 @@
+#!/bin/bash
+# Run all segmentation scripts to generate segment images
+# Usage: bin/segment-all
+
+set -euo pipefail
+
+for script in segments/*.sh; do
+    bin/segment "$script"
+done
