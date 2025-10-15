@@ -1,0 +1,44 @@
+{
+  "publisher": "University of Illinois Press on behalf of the North American Philosophical Publications",
+  "DOI": "10.2307/20009142",
+  "type": "journal-article",
+  "created": null,
+  "source": "JSTOR",
+  "title": "Investigations into Logical Deduction",
+  "prefix": "10.2307",
+  "volume": "1",
+  "issue": "4",
+  "page": "288-306",
+  "published-print": {
+    "date-parts": [
+      [
+        1964,
+        10
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Gerhard",
+      "family": "Gentzen",
+      "sequence": "first",
+      "affiliation": []
+    }
+  ],
+  "container-title": "American Philosophical Quarterly",
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.jstor.org/stable/20009142",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "unspecified"
+    }
+  ],
+  "resource": {
+    "primary": {
+      "URL": "https://www.jstor.org/stable/20009142"
+    }
+  },
+  "URL": null
+}
