@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""Extract PDF from HAR file by reconstructing Range requests."""
+
+import base64
+import json
+import sys
+from pathlib import Path
+
+
+def from_entries(entries):
+    """Convert list of {name, value} dicts to a dict."""
+    return {entry["name"]: entry["value"] for entry in entries}
+
+
+def main():
+    har_data = json.load(sys.stdin)
+
+    entries = har_data["log"]["entries"]
+
+    # Group entries by URL
+    url_entries = {}
+    for entry in entries:
+        url = entry["request"]["url"]
+
+        # Check for Range header
+        request_headers = from_entries(entry["request"]["headers"])
+        range_header = request_headers.get("Range")
+
+        if range_header is None:
+            continue
+
+        # Validate encoding
+        encoding = entry["response"]["content"].get("encoding", "")
+        assert encoding == "base64", encoding
+
+        # Validate content-type
+        response_headers = from_entries(entry["response"]["headers"])
+        content_type = response_headers.get("content-type") or response_headers.get("Content-Type")
+        assert content_type == "application/octet-stream", content_type
+
+        base_url = url.split("?")[0]
+
+        if base_url not in url_entries:
+            url_entries[base_url] = []
+
+        response_text = entry["response"]["content"]["text"]
+
+        url_entries[base_url].append({
+            "range": range_header,
+            "text": response_text,
+        })
+
+    # Process each URL
+    for base_url, chunks in url_entries.items():
+        filename = Path(base_url).name
+
+        # Parse Range headers and sort by start byte
+        parsed_chunks = []
+        for chunk in chunks:
+            # Range: bytes=start-end
+            range_value = chunk["range"]
+            assert range_value.startswith("bytes="), range_value
+            byte_range = range_value[6:]  # Remove "bytes="
+            start, end = byte_range.split("-")
+            start = int(start)
+            end = int(end)
+
+            parsed_chunks.append({
+                "start": start,
+                "end": end,
+                "text": chunk["text"],
+            })
+
+        parsed_chunks.sort(key=lambda x: x["start"])
+
+        # Assert first chunk starts at byte 0
+        assert parsed_chunks[0]["start"] == 0, parsed_chunks[0]["start"]
+
+        # Decode and concatenate, asserting chunks are contiguous
+        output = b""
+        expected_start = 0
+        for chunk in parsed_chunks:
+            # Assert no gaps
+            assert chunk["start"] == expected_start, (expected_start, chunk["start"])
+
+            decoded = base64.b64decode(chunk["text"])
+
+            # Assert end byte matches actual data length
+            expected_end = chunk["start"] + len(decoded) - 1
+            assert chunk["end"] == expected_end, (chunk["end"], expected_end)
+
+            output += decoded
+            expected_start = chunk["end"] + 1
+
+        # Write to file
+        with open(filename, "wb") as f:
+            f.write(output)
+
+        print(f"Wrote {len(output)} bytes to {filename}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()

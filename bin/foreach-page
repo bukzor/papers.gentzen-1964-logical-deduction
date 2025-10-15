@@ -1,0 +1,24 @@
+#!/bin/bash
+# Apply a command to each page file in 20009142.d/
+# Usage: bin/foreach-page <command>
+
+set -euo pipefail
+
+PAGES_DIR="20009142.d"
+
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <command>" >&2
+    echo "Example: $0 ./bin/split-merged-lines" >&2
+    exit 1
+fi
+
+COMMAND="$@"
+
+for page_file in "$PAGES_DIR"/*.txt; do
+    [ -f "$page_file" ] || continue
+
+    echo "Processing: $page_file"
+    $COMMAND < "$page_file" | sponge "$page_file"
+done
+
+echo "Done!"

@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""Find lines that are likely merged from two columns."""
+
+import sys
+
+MERGE_POSITION = 50
+MAX_DISTANCE = 8
+CONTEXT_WORDS = 3
+
+
+def ellipsize_right_to_words(text, n=CONTEXT_WORDS):
+    """Get first n words with ellipsis suffix."""
+    words = text.split()
+    return ' '.join(words[:n]) + ' ...' if len(words) > n else text
+
+
+def find_candidates(line):
+    """Find candidate space positions near MERGE_POSITION for splitting."""
+    spaces = [i for i, c in enumerate(line)
+              if c == ' ' and 0 < abs(i - MERGE_POSITION) <= MAX_DISTANCE]
+
+    result = []
+    pos = max((s for s in spaces if s < MERGE_POSITION), default=None)
+    if pos is not None:
+        result.append(pos)
+    if MERGE_POSITION < len(line) and line[MERGE_POSITION] == ' ':
+        result.append(MERGE_POSITION)
+    pos = min((s for s in spaces if s > MERGE_POSITION), default=None)
+    if pos is not None:
+        result.append(pos)
+    return result
+
+
+def get_next_line(lines, from_index):
+    """Return next non-empty line."""
+    for i in range(from_index, len(lines)):
+        line = lines[i].rstrip('\n')
+        if line:
+            return line
+    return ""
+
+
+def print_candidate(line_num, pos, line, next_line, num):
+    """Print split candidate with appropriate context."""
+    left = line[:pos].rstrip()
+    remainder = line[pos:].lstrip()
+
+    if num == 1:
+        # First: full left side, 42-char right preview
+        right = next_line[:42]
+        if len(next_line) > 42:
+            ellipsis = '...' if next_line[42] != ' ' else ' ...'
+            right += ellipsis
+        print(f"{line_num}:{pos}: {left} // {right}")
+        print(f"      {remainder}")
+    else:
+        # Others: last/first few words
+        words = left.split()
+        if len(words) > CONTEXT_WORDS:
+            left = '... ' + ' '.join(words[-CONTEXT_WORDS:])
+        print(f"{line_num}:{pos}: {left} // {ellipsize_right_to_words(next_line)}")
+        print(f"      {ellipsize_right_to_words(remainder, CONTEXT_WORDS + num - 2)}")
+
+
+def find_merged_lines(lines):
+    """Find and report lines that appear to be merged from two columns."""
+    found_any = False
+    for line_num, line in enumerate(lines, start=1):
+        line = line.rstrip('\n')
+        if line.startswith('---'):
+            break
+        if len(line) <= 95:
+            continue
+
+        candidates = find_candidates(line)
+        if not candidates:
+            continue
+
+        found_any = True
+        next_line = get_next_line(lines, line_num)
+
+        for num, pos in enumerate(reversed(candidates), start=1):
+            print_candidate(line_num, pos, line, next_line, num)
+        print("---")
+
+    return found_any
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: find-merged-lines <file>", file=sys.stderr)
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    with open(filename) as f:
+        if find_merged_lines(list(f)):
+            print(f"\nUsage: bin/split-line-at {filename} <positions...>")
+
+
+if __name__ == '__main__':
+    main()

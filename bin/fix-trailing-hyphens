@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""Fix trailing hyphens that were OCR'd as question marks."""
+
+import sys
+import re
+
+
+def main():
+    for line in sys.stdin:
+        line = line.rstrip('\n')
+        # Replace trailing ? after a letter with a hyphen
+        line = re.sub(r'([a-zA-Z])\?$', r'\1-', line)
+        print(line)
+
+
+if __name__ == '__main__':
+    main()
