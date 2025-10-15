@@ -1,0 +1,61 @@
+                        300 AMERICAN PHILOSOPHICAL QUARTERLY
+
+  3-102. This is achieved by re-designating the free are especially simple in that they allow the mix to be
+object variables in the following way :               immediately eliminated. The other cases (3.113.3)
+ We take a V-ZS (3-IA) above whose lower are the most important since their consideration
+sequent either no further inference figures of this brings out the basic idea behind the whole trans?
+kind occur, or if they do, they have already been formation. Here we use the induction hypothesis
+dealt with in a way to be outlined.                  with respect to y, i.e., we reduce each one of the
+   In all sequents above the lower sequent of this cases to transformed derivations of a lower grade.
+inference figure we replace the proper variables by     3.111. Suppose the left-hand upper sequent of the
+one and the same free object variable which, so mix at the end of the derivation is a basic sequent.
+far, has not yet occurred in the derivation. This The mix then reads :
+obviously leaves the validity of the ?-IS (3-IA)                        M?>M A-->A
+as such unchanged. (The proper variables did in
+fact not occur in its lower sequent.) Furthermore,                M, A* ?>A
+the remainder of the derivation remains correct, as
+                                                     which is transformed into :
+is shown by the immediately following lemma:
+  By applying this method systematically to every        A ?> A possibly several interchanges
+single ? -IS and 3-IA, the derivation thus remains     M, J*_> A and contractions.
+correct throughout and at the conclusion obviously
+has the desired property (3.101). Furthermore, as     That part of the derivation which is a
+was essential, the grade and rank of the derivation A ?> A remains the same, and we thus alr
+as well as its endsequent have remained unaltered. have a derivation without a mix.
+   3.103. Now we give the still outstanding proof of  3.112. Suppose the right-hand upper sequen
+the following lemma. (It is enunciated in a some? the mix is a basic sequent. The treatment of this
+what more general form than is immediately is symmetric to that of the previous one. We
+necessary, since we shall have to apply it again only to regard the two schemata as duals (cf.
+ later on (3.113.33).)                                      3.113. Suppose that neither the left- nor
+                                                          right-hand upper sequent of the mix is a
+  "An ZJT-basic sequent or inference figure turns into sequent. Then both are lower sequents of infe
+  a basic sequent or inference figure of the same figures since p = 2, and the right and left rank
+  kind, if we replace a free object variable, which is not
+                                                           equal 1, i.e.: In the sequents directly abov
+  the proper variable of the inference figure, in all its
+  occurrences in the basic sequent or inference figure, by
+                                                           left-hand upper sequent of the mix, the mix for
+  one and the same free object variable, provided again
+                                                           M does not occur in the succ?dent; in the seq
+  that that is not the proper variable of the inference directly above the right-hand upper sequent M
+                                                           not occur in the antecedent.
+  figure."
+                                                           Now the following holds generally : If a for
+  This holds trivially except for the ? -IS, the          occurs in the antecedent (succ?dent) of the lo
+N--IA, the 3-IS and the 3-IA. Yet even here there         sequent of an inference figure, it is either a prin
+is no cause for concern : the restrictions on variables   formula or the D of a thinning, or else i
+are not violated, since we may neither substitute         occurs in the antecedent (succ?dent) in at leas
+nor replace the proper variable. (This is the reason      upper sequent of the inference figure.
+why both restrictions on variables are necessary.)         This can be seen immediately by looking at
+Furthermore, the formula resulting from Fa is still       inference figure schemata (1.21, 1.22).
+obtained by substituting a for x in the formula            If we now consider the assumptions of
+resulting from Fx.                                        following three cases, we see at once that
+  Having prepared the way (3.10), we now                  exhaust all the possibilities that exist within
+proceed to the actual transformation of the
+derivation which serves to eliminate the mix               3.113.1. Suppose the left-hand upper sequen
+occurring in it.                                          the mix is the lower sequent of a thinning. Then
+  As already mentioned, we distinguish two cases :        conclusion of the derivation runs :
+ p = 2 (3.11) andp> 2 (3.12).                                          r?> 0
+   3.11. Suppose p = 2.
+ We distinguish between a number of particular                         r?> 0, M A -- A
+cases, of which cases 3.111, 3.112, 3.113.1, 3.113.2                     r,A*--+ &,a

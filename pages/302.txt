@@ -1,0 +1,88 @@
+                          302 AMERICAN PHILOSOPHICAL QUARTERLY
+
+ a, jy-> eub r->e,\ b,a-+a                             present occurring beside the lower sequent of If, is
+    r1?? 01? A 3 B I? A => B, r, A ?* instead
+                                       (9, 4  written next to the upper sequents of If. These
+          A, A J --> Olf &, A mix    now become upper sequents of new mixes. The
+                                      lower sequents of these mixes are now used as
+   This is transformed into :
+                                                       upper sequents of a new inference figure that takes
+                                                       the place of If. This new inference figure takes us
+          A, i>-> 019 B B, J --> /l
+                           mix                         back either directly, or after having added further
+ r--> 0, A A, A, J??>mix
+                      ^*, A                            inference figures, to the original endsequent. Each
+        r, r*9 ?*?-? @*, e,*, a                    new mix obviously has a rank smaller than p,
+     ====================================== possibly several mter
+        A> A A > 0\i ?> A changes and thinnings
+                                        since the left rank remains unchanged and the
+                                        right rank is diminished by at least i.
+    (The asterisks are, of course, intended       to be
+                                           In the strict application of this basic idea special
+ understood as follows : J* and 0* result  from Astill
+                                        circumstances    andarise which make it necessary to
+                                        distinguish
+ 0X by omitting all 5-formulae of the form       B; the
+                                                      7\*,corresponding cases and to deal
+ A** and 0* result from J\, A* and 0with by them
+                                              omitting
+                                                    separately.
+ all S-formulae of the form A.)            3.121.1. Suppose M occurs in the antecedent of
+   Now we have two mixes, but both mix        formulae
+                                        the left-hand  upper sequent of the mix. The end of
+ are of a lower grade than y. We first  the derivation
+                                             apply runs the:
+ induction hypothesis to the upper mix (i.e., to that
+ part of the derivation whose lowest figure   n~>27
+                                                  it is). A--+A                 , ? . ?
+                                                                      , thus M occurs m n.
+Thus the upper mix may be eliminated. n,A*--+Z*,A
+                                      We can
+ then also eliminate the lower mix.
+   3.12. Suppose p > 2.              This is transformed into
+   To begin with, we distinguish two main cases:
+ First case: The right rank is greater than 1A--+A
+                                              (3.121).
+                                                        possibly several thinnings,
+ Second case : The right rank is equal to 1 and the
+                                          JJ, J*_> 27*, A contractions and interchanges.
+ left rank is therefore greater than 1 (3.122). The
+ second case may essentially be dealt with sym?
+                                                         3.121.2. Suppose M does not occur in the ante?
+metrically to the first.
+                                                       cedent of the left-hand upper sequent of the mix.
+   3.121. Suppose the right rank is greater than 1.
+   I.e. : The right-hand upper sequent of the mix is
+                                                        (This assumption is used for the first time in
+                                        3.121.222.)
+ the lower sequent of an inference figure, let us call
+ it If, and M occurs in the antecedent of 3.121.21.
+                                           at least Suppose
+                                                       one If is a thinning, contraction,
+                                        or interchange in the antecedent. Then the end of the
+ upper sequent of If.                   derivation runs :
+   The basic idea behind the transformation procedure                                 W?? 0.
+ is the following :                                                                              If
+                                                                       n ?> ? s ?>
+    In the case of p = 2, we generally reduced the                                              mix.
+ derivation to one of a lower grade. Now, however, n,                            3*--+ 27*, 0
+we shall proceed to reduce the derivation to one
+ of the same grade, but of a lower rank, in This
+                                            order is
+                                                   to transformed
+                                                      be          into :
+ able to use the induction hypothesis with respect
+ to p.                                                 n--+z v?>0 .
+                                                               - mix
+   The only exception is the first case, 3.121.1,      n9 v* ?+ 27*, 0
+where the mix may at once be altogether elimin?                            jt" possibly several interchan
+ated.
+   In the remaining cases the reduction to deri?
+                                                       3*, n ?> 27*, 0 *
+vations of a lower rank is achieved in the follow?      77 g* r?? ?a possibly several in
+ing way : The mix is, as it were, moved up one level
+within the derivation, beyond the inference figure      The inference figure marked ? is of
+If. (Case 3.121.231, for example, illustrates this     as If, in so far as the ^-formulae de
+point particularly well.) To speak more precisely,     schema of If (in 1.21) by D and E, w
+the left-hand upper sequent of the mix (which          to M. If D or E is equal to M, we ha
+from now on will be designated by n?> U), at           inference figure (W* equals 3*).

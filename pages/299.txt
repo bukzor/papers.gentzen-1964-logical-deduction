@@ -1,0 +1,76 @@
+                              INVESTIGATIONS INTO LOGICAL DEDUCTION 299
+
+formulae, separated by commas, in each of which             We shall call "rank of the derivation" the sum o
+occurs at least once (as a member of the sequence)         its rank on the left and its rank on the right. These
+a formula of the form M, called the "mix formula" ;        two terms are defined as follows :
+and 0* and A* must be replaced by the same            The left rank is the greatest number of sequent
+sequences of formulae, save that all formulae of the connected on a branch such that the last sequent i
+form M occurring as members of the sequence are the left-hand upper sequent of the mix, where eac
+omitted. (M is an arbitrary formula.) -Tand A must formula of the branch contains the mix formula
+be replaced, as in the other schemata, by arbitrary the succ?dent.
+ (possibly empty) sequences of formulae, separated    The right rank is (correspondingly) the greatest
+by commas.                                          number of sequents connected on a branch whose
+   Example of a mix :                               lowest sequent is the right-hand upper sequent of the
+                                                    mix, and each formula of the branch contains the
+       A?+B, -\A B\JC,B,B,D,B-^                           mix formula in the antecedent.
+                A, B\/C, D?+~]A                             The lowest possible rank is evidently 2.
+                                                            To prove the lemma we perform two complete
+B is the mix formula.                                      inductions, one according to the grade y, the
+  We notice at once that every cut may be trans?          other according to the rank p of the derivation,
+formed into a mix by means of a number of                 i.e., we prove the theorem for a derivation of the
+thinnings and interchanges. (Conversely, every mix        grade y, assuming it to hold for derivations of a
+may be transformed into a cut by means of a certain        lower grade (in so far as there are such derivations,
+number of preceding interchanges and contrac?              i.e., as long as y is not equal to zero), supposing,
+ tions, though we do not use this fact.)                   therefore, that derivations of a lower grade may
+   In the following we shall consider only deriva?        already be transformed into derivations not
+ tions in which no cuts occur, but which may               containing a mix.
+ contain mixes instead.                                      Furthermore, we shall begin by considering the
+   Since derivations in the old sense may be               case where the rank p of the derivation equals 2
+ transformed into derivations of the new kind, it          (3.11), and after that the case of p > 2 (3.12),
+ suffices, for the proof of the Hauptsatz, to show that   where we assume that the theorem already holds
+a derivation of the new type may be transformed           for derivations of the same grade, but of a lower
+into a derivation with no mix.                             rank.
+   Furthermore, the following lemma is already               In the following bold-face capital letters will
+ sufficient :                                             generally serve as syntactic variables for formulae,
+   Lemma: Any derivation with a mix for its               and Greek capital letters as syntactic variables for
+lowest inference figure, and not containing any            (possibly empty) sequences of formulae.
+other mix, may be transformed into a derivationIn transforming derivations, we shall occasionally
+ (with the same endsequent) in which no mix meet "identical inference figures," i.e., inference
+occurs.
+                                            figures with the same upper and lower sequent.
+  From this the complete theorem easily Since      we have not admitted such figures in our
+                                             follows:
+   In an arbitrary derivation consider a mixcalculus,
+                                                   above
+                                                      they must be eliminated as soon as they
+whose lower sequent no further mix occurs.          Theis trivially possible by omitting one of
+                                            occur; this
+derivation for this lower sequent is then of the
+                                              thetwo  sequents.
+                                                   kind
+                                               The mix formula of the mix that occurs at the
+mentioned in the lemma, i.e., it may be transformed
+ in such a way that it no longer containsend
+                                          a mix.
+                                             of the derivation
+                                                    In         is designated by M. It is of
+ doing so, the rest of the derivationgrade
+                                      remains
+                                           y.
+ unchanged. This operation is then repeated3.10. Re-designating of free object variables in
+                                              until
+ every mix has systematically been eliminated.
+                                         preparation for the transformation of derivations.
+                                              Weof
+   It now remains for us to establish the proof  wish
+                                                   theto obtain a derivation that has the
+ lemma. (This proof extends into 3.2 inch)following properties :
+  We have to consider a derivation whose3.101. lowest
+                                                    For every ?-75 (3-IA) it holds that:
+ inference figure is a mix and which contains      novariable occurs in the derivation only
+                                          Its proper
+ other mix besides.                        in sequents above the lower sequent of the ?-75
+  The grade of the mix formula will be called      the
+                                           (3-IA) and does not occur as a proper variable in
+                                          any other Y-IS (3-IA).
+ "grade of the derivation" (defined in I, 2.2).

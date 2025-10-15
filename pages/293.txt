@@ -1,0 +1,60 @@
+                                INVESTIGATIONS INTO LOGICAL DEDUCTION 293
+
+   2.21. We shall now state the permissible inference           ? -/ ?-? a-/ 3-E
+figures.                                                                                                             [Fa]
+   The inference figure schemata below are to be                 Fa YxFx Fa 3xFx C
+ understood in the following way :                             ?xFx Fa IxFx CT~
+  We obtain an JVJ-inference figure from one of
+ the schemata by replacing A, B, C, D by arbitrary
+                                                                 =>-I =>-? -\-I -|-?
+ formulae; and VxFx (3xFx) by an arbitrary
+ formula containing ? or 3 for its terminal symbol,
+                                                                    [A] [A]
+                                                                B A A 3 B F AHA F
+where x indicates the bound object variable
+belonging to that terminal symbol; and Fa by the
+                                                                A^B B HA F D
+formula obtained from Fx by replacing the bound
+variable x, wherever it occurs, by the free object                The free object variab
+ variable a.                                                   represented by a in the res
+    (For a we may, for instance, take a variable               a proper variable. (This, of
+ already occurring in Fx. For the inference figures            there is such a variable, i.e
+ ?-/ and 3-E, this possibility will, however, be               variable represented by x
+ excluded by the restriction on variables which                represented by Fx.)
+ follows below, but it remains for ? -E and 3-1. Nor          Restrictions on Variables :
+need x occur at all in Fx, in which case Fa is, of               An JVJ-derivation is su
+course, identical with Fx. ? Fa is obviously always            restriction (for the signifi
+a subformula of ?xFx (3xFx), according to the                cf. ?3):
+definition of a subformula in I, 2.2.)                         The proper variable of an ? -I must not occur
+   Symbols written in square brackets have the               in the formula represented in the schema by
+following meaning : An arbitrary number (possibly            ?xFx, nor in any assumption formula upon which
+zero) of formulae of this form, all formally identical,      that formula depends.
+may be correlated with the inference figure as                 The proper variable of an 3-E must not occur in
+assumption formulae. They must then be initial               the formula represented in the schema by 3xFx;
+formulae of the derivation and, moreover, occur in           nor in an upper formula represented by C; nor in
+branches of proofs to which the particular upper             any assumption formula upon which that formula
+formula of the inference figure belongs. (I.e., that         depends, with the exception of the assumption
+upper formula above which the square bracket                 formulae represented by Fa correlated with the
+occurs in the scheme. This formula may already               3-E.
+itself be an assumption formula.)                              This concludes the definition of the "NJ
+  The fact that there is a correlation in a derivation       derivation."
+between a D-inference figure and the related
+assumption formulae must somehow be made                                                        ?3
+explicit, for example, by jointly numbering them
+                                                                         Intuitive Sense of JVJ-Inference Figures
+ (cf. examples in ?4).
+   The designations of the various inference figure           We shall explain the intuitive sense of a number
+ schemata: &-/, Sc-E, etc., stand for the following:        of inference figure schemata and thus try to show
+An inference figure formed according to a particu?          how the calculus in fact reflects "actual reasoning."
+ lar schema is an "introduction" (/) or an "elimina?            =>-/: Expressed in words, this schema corres?
+tion" (E) of the conjunction (&), the disjunction           ponds to the following inference: If B has been
+ (V)5 the universal quantifier (?), the existential         proved by means of assumption A, we have (this
+quantifier (3), the implication (=^), or of the              time without the assumption) : from A follows B.
+negation ("""]). More about this in ?5.                      (Further assumptions may, of course, have been
+  The Inference Figure Schemata :                           made and the result continues to depend on them.)
+                                                                V -E ("Distinction of Cases") : If A V B has been
+  &-/ &-E \j-i y-E                                          proved, one can distinguish two cases: What one
+                                                   [A][B]   first assumes is that A holds and derives, let us say,
+A_B A&B A&B A B AVB C C                                     C from it. If it is then possible to derive C also by
+A&B A B AVB AVB C                                           assuming that B holds, then C holds generally, i.e.,
+                                                             it is now independent of both assumptions (cf. i.i).

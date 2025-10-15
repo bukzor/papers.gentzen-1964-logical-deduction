@@ -1,0 +1,56 @@
+                             292 AMERICAN PHILOSOPHICAL QUARTERLY
+
+   By means of a number of examples we shall first The restriction to intuitionist reasoning is only
+of all show what form actual reasoning tends to take         provisional; we shall explain below (cf. ?5) our
+and shall examine, for this purpose, three "valid    reasons for doing so and shall show in what
+formulae" and try to see their validity in the most way the calculus has to be extended for classical
+natural way possible.                               reasoning (by including the law of the excluded
+    i.i. First example :                                     middle).
+  (XV (T&Z) ) => ( {X V r)&(X V Z) ) can be re?    Externally, the essential difference between
+cognized as a valid formula (H-A, p. 28, formula "JVJ-derivations" and derivations in the systems of
+ 19)                                                         Russell, Hubert, and Heyting is the following: In
+   The argument runs as follows: Suppose that                the latter systems true formulae are derived from a
+either X or T&Z holds. We distinguish the two                 series of "logical basic formulae" by means of a
+cases: 1. Xholds, 2. Y&Zholds. In the first case it          few forms of inference. Natural deduction, however,
+follows that X\J T holds, and also X V Z> hence              does not, in general, start from logical basic pro?
+ (XV T) & (X V Z) also nolds- In the second case             positions, but rather from assumptions (cf. examples
+T&Z holds, which means that both Tand Z hold.                 in ?1) to which logical deductions are applied. By
+From T follows X V T; from ? follows X\J Z- Thus             means of a later inference the result is then again
+ (X V T)8a(X V Z) again holds. The latter formula            made independent of the assumption.
+has thus been derived, in general, from X V ( TSc Z) ?          Calculi of the former kind will be referred to as
+ i.e.,                                                        logistic calculi.
+         (xv (r&z) ) => ( {x v r)&(x v Z) ) holds.               2.2. After this preliminary remark we define the
+    1.2. Second example:                                     concept of an JVJ-derivation as follows :
+       (3x V-yFxy) => ( YylxFxy).                               (Examples in ?4).
+    (H-A, formula 36, p. 60). The argument runs                 An jVJ-derivation consists of formulae ordered
+as follows : Suppose there is an x such that for all^         in tree form (I, 3.3).
+Fxy holds. Let a be such an x. Then for allj>: Fay              (By demanding that the formulae are in tree
+holds. Now let b be an arbitrary object. Then Fab            form we are deviating somewhat from the analogy
+holds. Thus there is an x, viz., a, such that Fxb            with actual reasoning. This is so, since in actual
+holds. Since b was arbitrary, our result therefore           reasoning we necessarily have (1) a linear sequence
+holds for all objects, i.e., for allj> there is an x, such   of propositions due to the linear ordering of our
+that Fxy holds. This yields our assertion.                   utterances, and (2) we are accustomed to applying
+    1.3. Third example :                                     repeatedly a result once it has been obtained,
+    (~^3xFx)^(Yy~]Fy) is to be recognized as                 whereas the tree form permits only of a single use
+ intuitionistically valid. We reason as follows:             of a derived formula. These two deviations permit
+Assume there were no x for which Fx held. From               us to define the concept of a derivation in a more
+ this we wish to infer: For ally, ~~]Fy holds. Now           convenient form and are not essential.)
+ suppose a were some object for which Fa held. It              The initial formulae of the derivation are
+would then follow that there was an x for which              assumption formulae. Each of these is correlated
+Fx held, viz., a would be such an object. This               with precisely one D-inference figure (and in
+contradicts our hypothesis that ~~\3xFx. We have             fact occurs "above" [I. 3.5] the lower formula
+therefore a contradiction, i.e., Fa cannot hold. But         of that figure, as will be explained more fully
+since a was completely arbitrary, it follows that for        below).
+ally, ~]Fy holds. Q.E.D.                                       All formulae that occur below an assumption
+ We intend now to integrate proofs of the kind               formula, but still above the lower formula of the
+carried out in these three examples in an exactly            D-inference figure with which that assumption
+defined calculus (in ?4, we shall show how these             formula is correlated, that assumption formula
+examples are presented in that calculus).                    itself included, are said to be dependent on that
+                                                             assumption formula.
+                                                                (Thus the inference makes all succeeding pro?
+                                 ?2.                         positions independent of the assumption which is
+                                                             correlated with it.)
+               Construction of the Calculus NJ
+                                                               According to what we have said the endformula
+   2.1. We intend now to present a calculus for              of the derivation depends on no assumption
+"natural" intuitionist derivations of valid formulae.        formula.

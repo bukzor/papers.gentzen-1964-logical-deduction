@@ -1,0 +1,47 @@
+                       306 AMERICAN PHILOSOPHICAL QUARTERLY
+
+   3.232.22. In the cases that are symmetric to bother7 and ? always remain empty. (T corresponds
+3.121.2, the mix in the end of the derivation runs:     to the 0 of the inference figure.) Thus we have the
+                q-->m z-->n                             case which is symmetric to 3.121.221. Further?
+                                                        more, r is equal to M, i.e., 71* is empty, and 77
+                  Q, Z*--> 77                           contains at most one formula. Hence in the new
+where 77 contains at most one ?S-formula, and           derivation there never in fact occurs more than one
+where Q ?> M is the lower sequent of an LJ              formula in the succ?dent of a sequent.
+inference figure in which at least one upper              The case of a y-IA is symmetric to 3.121.231.
+sequent contains M as a succ?dent formula.              Again, r is equal to M, T* is empty, and 77 con?
+   If we now look at the inference figure schemata      tains at most one formula ; all is thus in order.
+ 1.21, 1.22, it becomes easily apparent that such an      There now remains the case of a ^>-IA, i.e.,
+inference figure can only be a thinning, contraction,   3.122.1. In an LJ- ^>-IA, the 0 of the schema
+or interchange in the antecedent, or a V -IA, a         (1.22) is empty. Thus we have the case set out
+Sc-IA, a 3-IA, a ?-74, and a =>-IA. Let us              under 3.122.12. A* is also empty, and 77 contains
+disregard for the moment the V -IA and the =>-Z4.       at most one formula, which means that here, too,
+Then all the possibilities enumerated above fall        we again obtain an LJ-derivation from an LJ
+within the case symmetric to 3.121.22, where            derivation.
+
+
+
+
+                                                GLOSSARY
+
+All-Reichen?universal quantifier                        Oberformel?upper formula
+Annahmeformel?assumption formula                        Obersequenz?upper sequent
+Antezedenz?antecedent                                   Oder~Z,eichen?disjunction symbol
+?u?erstes Z^hen?terminal symbol                         Rang?rank
+Eigenvariable?proper variable                           Satz?theorem
+Es-gibt-Zeichen?existential quantifier                  Schlie?en?deduction
+Faden?hranch                                            Schlu??inference
+Folgt-Zeichen?-implication symbol                       Schnitt?cut
+Grad?grade                                              Sequenz?sequent
+Grundformel?basic formula                               Spiegelbidlich?dual
+Hauptformel?principal formula                           Stammbaumform?tree form
+Hauptsatz?Hauptsatz                                     Struktur-Schlu?figur?structural inference figure
+Herleitung?derivation                                   Sukzedenz?succ?dent
+Hilfssatz?lemma                                       Teilformel?subformula
+Inhaltlicher Sinn?intuitive sense                     Und-Zeichen?conjunction symbol
+                                                      Untersequenz?lower sequent
+Logische-Zeichen-Schlu?figur? operational inference figure
+Mischformel? mix formula                              Verd?nnung?thinning
+Mischung?mix                                          Vertauschung?interchange
+Mittelungszeichen?syntactic variable                  Zeichen f?r Bestimmtes?constant symbol
+Nebenformel?side formula                              Zusammenzeihung?contraction
+Nicht-Zeichen?negation symbol

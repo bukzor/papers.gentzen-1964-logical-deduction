@@ -1,0 +1,57 @@
+ American Philosophical Quarterly
+ Volume i, Number 4, October 1964
+
+
+   II. "INVESTIGATIONS INTO LOGICAL DEDUCTION"*
+                                                    GERHARD GENTZEN
+
+                           Introduction                                   current interest, and an English edition of this
+                                                                          treatise is to be very much welcomed.
+                                                                                                                           Paul Bernays
+GERHARD
+    tion for GENTZEN's          inaugural
+             the University of G?ttingen, "Unter?disserta                                               (Part I)
+  suchungen ?ber das logische Schliessen,99 of which Mr.
+                                                                                                       Synopsis
+ Manfred Szabo here presents an English transla?
+  tion, is an important step in the deeper analysis of                       The investigations that follow concern the
+  the logical calculus as it was begun in the thesis of                   domain o? predicate logic, called by H-A1 the "lower
+ Jacques Herbrand. In it Gentzen develops a new                           functional calculus." It comprises the types of
+  form of logical calculus, the "calculus of sequents,"                    inference that are continually used in all parts of
+ which he introduces by starting first from a                            mathematics. What remains to be added to these
+ "natural calculus" and by then transforming it                          are axioms and forms of inference that may be
+ for his technical purposes. Its central theorem, an                      considered as being proper to the particular
+ "elimination theorem," is proved in detail in the                        branches of mathematics, e.g., in elementary
+ first part of the paper. The second part deals with                      number theory the axioms of the natural numbers,
+ applications of this elimination theorem as well as                      of addition, multiplication, and exponentiation, as
+  containing the proof of the equivalence of the                         well as the inference of complete induction; in
+  calculus of sequents with the usual logical                             geometry the geometric axioms.
+  calculus.                                                                  In addition to classical logic I shall also deal with
+    The Untersuchungen have had a profound                                intuitionist logic as formalized, for example, by
+  influence on the development of mathematical                           Heyting2.
+  logic and proof theory. The treatment of the                             The present investigations into classical and
+ calculus of sequents has been extended by Oiva                           intuitionist predicate logic fall essentially into two
+ Ketonen (in Finland) and by Haskell B. Curry (in                         only loosely connected parts.
+  the U.S.A.), and the elimination theorem of                                i. My starting point was this : The formalization
+ Gentzen has been transferred by Kurt Sch?tte to                          of logical deduction, especially as it has been
+  the usual logical calculus. The application of the                      developed by Frege, Russell, and Hubert, is rather
+  elimination theorem to proof theory has been                            far removed from the forms of deduction used in
+  developed by Paul Lorenzen and Kurt Sch?tte                             practice in mathematical proofs. Considerable
+  through the use of "infinite induction." Lately                         formal advantages are achieved in return. I
+ Gaisi Takeuti (in Japan) has generalized the                             intended, first of all, to set up a formal system which
+ Gentzen calculus to a system of type theory in                           came as close as possible to actual reasoning. The
+ which the theory of real numbers can be formalized.                       result was a "calculus of natural deduction." ("JVJ"
+ Here the elimination theorem is not yet proved,                          for intuitionist, "NK" for classical predicate logic.)
+ but Takeuti shows that upon the assumption of the                        This calculus then turned out to have specific pro?
+ generalized elimination theorem the consistency                         perties; in particular, the "law of the excluded
+ of his system follows.                                                  middle," which intuitionists reject, occupies a
+    Thus Gentzen's Untersuchungen are of great                            special position.
+   * Originally published in the Mathematische Zeitschrift, vol. 39 (1935), pp. 176-221. A second part of these investigations
+ appeared under the same title, ibid., pp. 405-431. The American Philosophical Quarterly plans to publish this at a later date. The
+ present English translation is by Mr. M. E. Szabo (McGill University, Montreal) whose thanks are due to his late wife Ann
+  for her continued encouragement, and to Mr. Michael Dummett of All Souls College, Oxford, for reading the translation
+  and suggesting improvements.
+    1 Hilbert-Ackermann, Grundz?ge der theoretischen Logik, in this paper referred to as H-A.
+    2 A. Heyting, Die formalen Regeln der intuitionistischen Logik und Mathematik, Sitzungsber. d. Preu?. Akad. d. Wiss., phys.-math.
+ Kl. 1930, pp. 42-65.
+                                                                       288

@@ -1,0 +1,74 @@
+                               INVESTIGATIONS INTO LOGICAL DEDUCTION 305
+         0, A Z?>77mix
+                    .                   3.23. The transformation proper (3.11 and 3.12).
+  i , ?, -> u , a , ii possibly severalWe have to show for each of the cases 3.111 to
+                       interchanges and                 3.122.12 that the given transformations do not
+                      thinnings                         introduce any sequents with more than one S
+                              B,A-^A z-->n .            formula in the succ?dent.
+                                                     3.231. Let us begin with the cases 3.11 :
+    a => b, r, z*, a, e*-, 0*, n, a*, n possibly several
+                                                     In the cases 3.111, 3.113.1, 3-H3-31* 3-H3-35
+    A => B, r, A, Z*-^ 0*, A*, II contractionsandand
+                                                  3.113.36, only such formulae occur in each
+                                interchanges.
+                                              succ?dent of the sequent of a new derivation as
+   Both mixes may be eliminated by virtue of the        already occurred in the succ?dent of the sequent of
+ induction hypothesis.                                  the original derivation.
+   3.122.12. Suppose M does not occur in both 0           Essentially the same applies in 1.113.33. The
+ and A simultaneously. It must occur in one of them.    only difference is an additional substitution of free
+We consider the case of M occurring in A but not        object variables, which does not, of course, alter
+ in 0; the alternative case is completely analogous.    the number of succ?dent formulae of a sequent.
+  We transform the end of the derivation into :           Cases 3.112, 3.113.32, and 3.113.34 were dealt
+                                                        with symmetrically to cases 3.111, 3.113.1,
+                   B,A--+A 27?>77 .                     3.113.31, and 3.113.33, i.e., in order to get one case
+      F --> 0, A B, A, 27*?> A*, 77 ^                   from another, we read the schemata from right to
+        A 3 B, T, A, 27*?> 0, A*, 77                    left instead of from left to right (as well as changing
+                                                        logical symbols, a process which is here of no
+   The mix may be eliminated by virtue of the           consequence). Hence in the antecedent of one case
+ induction hypothesis.
+                                                        we get precisely the same as in the succ?dent of
+   3.2. Proof of the Hauptsatz for LJ-derivations.
+                                                        another. For the antecedents of cases 3.111,3.113.1,
+   In order to transform an LJ-derivation into an
+                                                        3.113.31 and 3.113,33, the same applies as for the
+ZJ-derivation without cuts, we apply exactly the same
+                                                        succedents, viz., in every antecedent of a sequent of
+procedure as for LTf-derivations.
+                                                        the new derivation only such formulae occur as
+   Since an LJ-derivation is a special case of an
+                                                        already occurred in an antecedent of a sequent of
+LTf-derivation, it is clear that the transformation
+                                                        the original derivation.
+ can be carried out. We have only to convince             This disposes of all symmetric cases: 3.112,
+ourselves that with every transformation step an        3.113.2, 3-II3-32 and 3.113.34.
+LJ-derivation becomes another LJ-derivation, i.e.,
+                                                          3.23. Now let us look at the cases, 3.12 :
+that the 7)-sequents of the transformed derivation
+do not contain more than one ?S-formula in the            3.232.1. For the cases 3.121 it holds generally
+                                                        that Z* is empty, since in 77 ?> Z, Z must contain
+succ?dent, given that this was the case before.
+                                                        only one formula, and that formula must be equal
+  We therefore examine each step of the trans?          to M.
+formation from that point of view.
+                                                           It is now obvious that in every succ?dent of a
+   3.21. Replacement of cuts by mixes. An LJ-cut
+ runs:                                                  sequent only such formulae occur as already
+                                                        occurred in the succ?dent of a sequent of the
+                r?>D Y),A?>A                            original derivation.
+                   r,A-->A                                 3.232.2. In the cases 3.122 it is somewhat more
+where A contains at most one ^-formula. difficult
+                                        We        to see that from an ZJ-derivation we
+transform this cut into :               always get another LJ-derivation. We must
+                                        direct our attention, as we have already done in
+   r?>D D, A?>A .                                       considering symmetric cases, to the antecedents in
+-r a*-^  a-rmix                 the schemata 3.121.
+     ' _possibly several interchanges
+                                            At this point we distinguish two further sub?
+           r, A ?> A and thinnings in the cases
+                                           ante?:
+                    cedent.
+                                                          3.232.21. The case which is symmetric to 3.121.1
+  This replacement gives us a new ZJ-derivation.        is trivial, since in every antecedent of a sequent of
+  3.22. By replacing the free object variable (3.10)    a new derivation (in case 3.121.1) only such
+we trivially get another LJ-derivation from a           formulae occur as already occurred in an ante?
+previous one.                                           cedent of a sequent of the original derivation.
