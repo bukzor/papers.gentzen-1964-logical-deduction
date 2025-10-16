@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+png="$1"
+stem=$(echo "$png" | sed -r 's#^images/#pages/#; s#\.[^.]+$##')
+tmp="$stem.ocr.md"
+dst="$stem.md"
+
+if [ -f "$dst" ]; then
+  echo "Already exists: $dst"
+  exit 0
+fi
+
+mkdir -p "$(dirname "$tmp")"
+claude --model opus --print '
+Role: You are an OCR agent, tasked with transcribing an image to markdown.
+
+Goal:
+
+All image content is faithfully represented in the output.
+
+Formatting Rules:
+
+* show your work, in <thinking> blocks
+* markdown, but with manual text wrapping
+* ensure an empty line before each paragraph
+* use markdown notation for bold and italic
+* make full use of unicode
+* Diagrams:
+  * use ```txt for "ascii art"
+  * Write vertically-aligned elements on the same line of text
+  * Place vertically-aligned elements on the same column of text
+
+Next: Read('"$png"')
+' > "$tmp"
+./bin/claude-ocr-strip < "$tmp" > "$dst"
+echo "Written: $dst"

@@ -1,0 +1,91 @@
+<thinking>
+This appears to be page 304 (left column) of a mathematical logic text. It contains formal logical derivations with rules like "mix", "interchanges and thinnings", and various mathematical symbols. The text discusses transformations of derivations and uses special notation for logical formulas.
+
+Key formatting elements:
+- Paragraphs of regular text
+- Mathematical derivations shown with horizontal lines separating premises from conclusions
+- Special symbols: Π (Pi), Σ (Sigma), Γ (Gamma), Θ (Theta), Δ (Delta), ∨ (logical OR), ⊃ (implication arrow)
+- Subscripts and superscripts (like A*, Γ*, etc.)
+- Annotations like "mix", "possibly several interchanges and thinnings"
+- Section numbers (3.121.233, 3.121.2331)
+</thinking>
+
+((**A** ∨ **B**)* stands either for **A** ∨ **B** or for nothing
+according as **A** ∨ **B** is unequal or equal to **M**.)
+
+**M** certainly occurs in *Γ*. (For otherwise **M** would
+be equal to **A** ∨ **B**, and the right rank would be
+equal to 1 contrary to 3.121.)
+
+To begin with, we transform the end of the
+derivation into:
+
+```txt
+Π —→ Σ  A, Γ —→ Θ
+―――――――――――――――――――― mix
+Π, A*, Γ* —→ Σ*, Θ
+―――――――――――――――――――― possibly several
+A, Π, Γ* —→ Σ*, Θ   interchanges and
+                     thinnings
+―――――――――――――――――――――――――――――――――――――
+        Π —→ Σ  B, Γ —→ Θ
+        ―――――――――――――――――――― mix
+        Π, B*, Γ* —→ Σ*, Θ
+        ―――――――――――――――――――― possibly several
+        B, Π, Γ* —→ Σ*, Θ   interchanges and
+                             thinnings
+―――――――――――――――――――――――――――――――――――――― ∨–IA.
+        A ∨ B, Π, Γ* —→ Σ*, Θ
+```
+
+Both mixes may be eliminated by virtue of the
+induction hypothesis.
+
+From here on the procedure is the same as that in
+3.121.221 and 3.121.222, i.e., we distinguish two cases
+according as **A** ∨ **B** is unequal or equal to **M**. In the
+first case we may have to add several interchanges to
+obtain the endsequent of the original derivation;
+in the second case we add a mix with *Π* —→ *Σ* to
+its left-hand upper sequent, and thus once again
+obtain the endsequent of the original derivation by
+going on to perform a number of contractions and
+interchanges, if necessary. The mix concerned may
+be eliminated, since the associated right rank
+equals 1. (All this is as in 3.121.222.)
+
+3.121.233. Suppose **if** is a ⊃–*IA*.
+
+Then the end of the derivation runs:
+
+```txt
+        Γ —→ Θ, A      B, Δ —→ Λ
+Π —→ Σ  ―――――――――――――――――――――――――― ⊃–IA
+        A ⊃ B, Γ, Δ —→ Θ, Λ
+―――――――――――――――――――――――――――――――――――― mix
+Π, (A ⊃ B)*, Γ*, Δ* —→ Σ*, Θ, Λ
+```
+
+3.121.2331. Suppose **M** occurs in *Γ* and *Δ*.
+
+In that case we begin by transforming the
+derivation into:
+
+```txt
+        Π —→ Σ  B, Δ —→ Λ
+        ――――――――――――――――――― mix
+        Π, B*, Δ* —→ Σ*, Λ
+        ――――――――――――――――――― possibly several inter-
+        B*, Π, Δ* —→ Σ*, Λ changes and thinnings
+Π —→ Σ  Γ —→ Θ, A
+―――――――――――――――――― mix
+Π, Γ* —→ Σ*, Θ, A
+―――――――――――――――――――――――――――――――――――――――― ⊃–IA
+A ⊃ B, Π, Γ*, Π, Δ* —→ Σ*, Θ, Σ* Λ
+```
+
+Both mixes may be eliminated by virtue of the
+induction hypothesis. Then we proceed as in
+3.121.221 and 3.121.222. (All that may happen in
+the first case is that beside interchanges a number of
+contractions must be applied.)

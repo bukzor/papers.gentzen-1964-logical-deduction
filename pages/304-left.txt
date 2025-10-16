@@ -8,19 +8,20 @@ To begin with, we transform the end of the
 derivation into:
 
 Π —> Σ   A, Γ —> Θ
-─────────────────────── mix
-Π, A*, Γ*—> Σ*, Θ possibly several
-A, Π, Γ*—> Σ*, Θ interchanges and
+──────────────────  mix
+Π, A*, Γ*—> Σ*, Θ
+══════════════════  possibly several
+A, Π, Γ*—> Σ*, Θ    interchanges and
                     thinnings
-                    ──────────────────────
+──────────────────────────────────────
                     Π —> Σ  B, Γ —> Θ
-                    ─────────────────────── mix
-                    Π, B*, Γ*—> Σ*, Θ possibly several
-                    B, Π, Γ*—> Σ*, Θ interchanges and
-                                        thinnings
-                                        ∨ —IA.
-
-A ∨ B, Π, Γ*—> Σ*, Θ
+                    ────────────────── mix
+                    Π, B*, Γ*—> Σ*, Θ
+                    ══════════════════ possibly several
+                    B, Π, Γ*—> Σ*, Θ   interchanges and
+                                       thinnings
+        ────────────────────────────── ∨ —IA.
+        A ∨ B, Π, Γ*—> Σ*, Θ
 
 Both mixes may be eliminated by virtue of the
 induction hypothesis.
@@ -42,24 +43,25 @@ equals 1. (All this as in 3.121.222.)
 Then the end of the derivation runs:
 
          Γ —> Θ, A      B, Δ —> Λ
-         ───────────────────────── ⊃ —IA
-Π —> Σ  A ⊃ B, Γ, Δ —> Θ, Λ
-─────────────────────────────── mix
+         ──────────────────────── ⊃ —IA
+Π —> Σ   A ⊃ B, Γ, Δ —> Θ, Λ
+────────────────────────────── mix
 Π, (A ⊃ B)*, Γ*, Δ*—> Σ*, Θ, Λ
 
 3.121.233.1. Suppose M occurs in Γ and Δ.
 In that case we begin by transforming the
 derivation into:
 
-         Π —> Σ  B, Δ —> Λ
-         ─────────────────────── mix
-         Π, B*, Δ*—> Σ*, Λ possibly several inter-
-         B, Π, Δ*—> Σ*, Λ changes and thinnings
+                Π —> Σ  B, Δ —> Λ
+                ────────────────── mix
+                Π, B*, Δ*—> Σ*, Λ
+                ══════════════════ possibly several inter-
+                B, Π, Δ*—> Σ*, Λ   changes and thinnings
 Π —> Σ  Γ —> Θ, A
-─────────────────────── mix
+────────────────── mix
 Π, Γ*—> Σ*, Θ, A
-──────────────────────────────────────────── ⊃ —IA
-A ⊃ B, Π, Γ*, Π, Δ*—> Σ*, Θ, Σ* Λ
+────────────────────────────────── ⊃ —IA
+A ⊃ B, Π, Γ*, Π, Δ*—> Σ*, Θ, Σ*, Λ
 
 Both mixes may be eliminated by virtue of the
 induction hypothesis. Then we proceed as in
