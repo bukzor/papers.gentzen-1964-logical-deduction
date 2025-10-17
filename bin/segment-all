@@ -4,6 +4,6 @@
 
 set -euo pipefail
 
-for script in segments/*.sh; do
+for script in image-segments/*.sh; do
     bin/segment "$script"
 done

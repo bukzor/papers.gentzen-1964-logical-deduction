@@ -1,14 +1,14 @@
 #!/bin/bash
 # Run a segment script on its corresponding page image
-# Usage: bin/segment segments/290-left.sh
+# Usage: bin/segment image-segments/290-left.sh
 #   Reads from images/290.png
-#   Writes to segments/290-left.png
+#   Writes to image-segments/290-left.png
 
 set -euo pipefail
 
 if [[ $# -ne 1 ]]; then
     echo "Usage: $0 SEGMENT_SCRIPT" >&2
-    echo "  Example: $0 segments/290-left.sh" >&2
+    echo "  Example: $0 image-segments/290-left.sh" >&2
     exit 1
 fi
 
@@ -20,20 +20,20 @@ if [[ ! -f "$segment_script" ]]; then
 fi
 
 # Extract page number and segment name from script path
-# e.g., segments/290-left.sh -> page=290, segment=left
+# e.g., image-segments/290-left.sh -> page=290, segment=left
 basename=$(basename "$segment_script" .sh)
 page=$(echo "$basename" | cut -d- -f1)
 segment=$(echo "$basename" | cut -d- -f2-)
 
 input_image="images/${page}.png"
-output_image="segments/${page}-${segment}.png"
+output_image="image-segments/${page}-${segment}.png"
 
 if [[ ! -f "$input_image" ]]; then
     echo "Error: Input image not found: $input_image" >&2
     exit 1
 fi
 
-mkdir -p segments
+mkdir -p image-segments
 
 cat "$input_image" | bash "$segment_script" > "$output_image"
 

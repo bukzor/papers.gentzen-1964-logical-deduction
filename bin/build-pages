@@ -4,14 +4,14 @@
 #   bin/build-pages          # build all pages
 #   bin/build-pages 288 289  # build specific pages
 #   # takes paths too:
-#   bin/build-pages ./images/288.png ./pages/segments/288-aa-title.md
+#   bin/build-pages ./images/288.png ./page-segments/288-aa-title.md
 
 set -euo pipefail
 
 # Get list of pages to build
 if [[ $# -eq 0 ]]; then
     # Build all pages: extract unique page numbers from segment filenames
-    set -- $(ls pages/segments/*.md)
+    set -- $(ls page-segments/*.md)
 fi
 
 # Extract unique page numbers from paths (handles segment paths too)
@@ -30,11 +30,11 @@ for page in "${pages[@]}"; do
     rm -f "$output"
 
     # Concatenate all segments for this page in sorted order
-    ( for segment_path in $(ls pages/segments/${page}-*.md | sort); do
+    ( for segment_path in $(ls page-segments/${page}-*.md | sort); do
           # Add source reference comment with link to segment image
           segment=$(basename "$segment_path" .md)
-          echo "<!--  <./segments/$segment.md> -->"
-          echo "[↗](../images/segments/$segment.png)"
+          echo "<!--  <../page-segments/$segment.md> -->"
+          echo "[↗](../image-segments/$segment.png)"
           echo
 
           # Append segment content
