@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Build page files from segments
+# Usage: bin/build-pages [PAGE...]
+#   bin/build-pages          # build all pages
+#   bin/build-pages 288 289  # build specific pages
+#   # takes paths too:
+#   bin/build-pages ./images/288.png ./pages/segments/288-aa-title.md
+
+set -euo pipefail
+
+# Get list of pages to build
+if [[ $# -eq 0 ]]; then
+    # Build all pages: extract unique page numbers from segment filenames
+    set -- $(ls pages/segments/*.md)
+fi
+
+# Extract unique page numbers from paths (handles segment paths too)
+pages=()
+for page in "$@"; do
+    page=$(basename "$page")
+    page=$(echo "$page" | sed 's/[.-].*//')
+    pages+=("$page")
+done
+pages=($(printf '%s\n' "${pages[@]}" | sort -u))
+
+for page in "${pages[@]}"; do
+    output="pages/${page}.md"
+
+    # Remove old output if exists
+    rm -f "$output"
+
+    # Concatenate all segments for this page in sorted order
+    ( for segment_path in $(ls pages/segments/${page}-*.md | sort); do
+          # Add source reference comment with link to segment image
+          segment=$(basename "$segment_path" .md)
+          echo "<!--  <./segments/$segment.md> -->"
+          echo "[↗](../images/segments/$segment.png)"
+          echo
+
+          # Append segment content
+          cat "$segment_path"
+          echo
+      done
+    ) > "$output"
+
+    # Make readonly
+    chmod a-w "$output"
+
+    echo "Built: $output"
+done

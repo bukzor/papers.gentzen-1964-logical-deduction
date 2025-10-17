@@ -3,7 +3,9 @@ set -euo pipefail
 
 png="$1"
 stem=$(echo "$png" | sed -r 's#^images/#pages/#; s#\.[^.]+$##')
-tmp="$stem.ocr.md"
+stem_dir=$(dirname "$stem")
+stem_base=$(basename "$stem")
+tmp="$stem_dir/ocr/$stem_base.ocr.md"
 dst="$stem.md"
 
 if [ -f "$dst" ]; then
