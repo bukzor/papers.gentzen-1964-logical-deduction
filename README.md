@@ -14,4 +14,10 @@ Original PDF retrieved from JSTOR.
 ## Structure
 
 - `src/` - Original PDF
+- `pages/` - Corrected text per page (288-306) in Markdown format
 - `bin/` - OCR extraction and correction scripts
+- `images/` - Reference page images for OCR verification
+
+## Viewing
+
+For best viewing experience, open `pages/` directory with [Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en) Chrome extension.
